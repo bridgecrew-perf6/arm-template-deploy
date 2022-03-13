@@ -24,4 +24,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./cosmos.json
-          parameters: databaseName=cosmos-github-nuranc
+          parameters: location=NorthEurope primaryRegion=WestEurope secondaryRegion=EastUS databaseName=cosmosdb-nuranc-github containername=cont-nuranc-github
